@@ -8,7 +8,8 @@ public class EquilateralTriangle extends Triangle {
     
     // Add surface calculator method
     public double calcSurface() {
-        return ((parA * parA * Math.sqrt(3)) / 4;
+        Double s=(parA+parB+parC)/2;
+        return Math.sqrt(s*(s-parA)*(s-parB)*(s-parC));
     }
     
     // Add perimeter calculator method
